@@ -29,8 +29,8 @@ Backend API service for the Talent Pool App, handling user authentication, profi
 1. Clone the repository
 
 ```bash
-git clone [Your Repository URL]
-cd talent-pool-backend
+git clone git@github.com:Maina206/Talent-Pool-Platform-BackEnd.git
+cd Talent-Pool-Platform-Backedn
 ```
 
 2. Create and activate virtual environment
@@ -38,8 +38,6 @@ cd talent-pool-backend
 ```bash
 python -m venv venv
 source venv/bin/activate  # For Unix
-# or
-.\venv\Scripts\activate  # For Windows
 ```
 
 3. Install dependencies
@@ -89,21 +87,40 @@ PATCH /api/profiles/<id>
 ## Database Schema
 
 ```sql
-Users Table:
-- id (Primary Key)
+Users Employee Table:
+- id 
+- first_name 
+- last_name 
 - email
-- password_hash
-- user_type (developer/employer)
-- created_at
+- phone 
+- company_name 
+- password 
 
-Profiles Table:
-- id (Primary Key)
-- user_id (Foreign Key)
-- name
-- skills
+Users Employer Table:
+- id 
+- first_name 
+- last_name 
+- email
+- phone 
 - experience
+- programming_languages
+- bio
 - education
-- availability_status
+- availability
+- password
+
+Jobs Table:
+- id 
+- title
+- description 
+- company_name
+- location
+- experience_required
+- job_type
+- application_deadline
+- job_status
+- employer_id
+- employee_id
 ```
 
 ## Deployment
@@ -125,7 +142,7 @@ The application is deployed on Render. To deploy your own instance:
 
 ## Contact
 
-Alexander Maina - [Your Contact Information]
+Alexander Maina - maina206mwangi@gmail.com
 
 ## License
 
