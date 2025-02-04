@@ -68,7 +68,7 @@ flask run
 
 ## API Documentation
 
-Base URL: [Your API URL](your-api-url-here)
+Base URL: 
 
 ### Current Endpoints
 
