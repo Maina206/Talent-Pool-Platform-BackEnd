@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+env/
+.env
+
+# Bytecode files
+*.pyc
+
+# Flask migrations folder
+migrations/
+
+# Configuration files (optional)
+*.db
